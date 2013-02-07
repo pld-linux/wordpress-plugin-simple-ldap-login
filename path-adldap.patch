@@ -1,0 +1,11 @@
+--- simple-ldap-login/Simple-LDAP-Login.php~	2013-02-07 15:06:30.000000000 +0200
++++ simple-ldap-login/Simple-LDAP-Login.php	2013-02-07 15:32:15.907948183 +0200
+@@ -7,7 +7,7 @@
+ Author: Clifton H. Griffin II
+ Author URI: http://clifgriffin.com
+ */
+-require_once( WP_PLUGIN_DIR."/simple-ldap-login/adLDAP.php");
++require_once( "adLDAP.php");
+ require_once( ABSPATH . WPINC . '/registration.php');
+ 
+ //Admin

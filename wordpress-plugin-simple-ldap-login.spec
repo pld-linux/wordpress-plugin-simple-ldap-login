@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/WWW
 Source0:	http://downloads.wordpress.org/plugin/simple-ldap-login.%{version}.zip
 # Source0-md5:	c552fbfcd655936a0c6feccfa02643a6
+Patch0:		path-adldap.patch
 URL:		http://wordpress.org/extend/plugins/simple-ldap-login/
 BuildRequires:	rpmbuild(macros) >= 1.553
 BuildRequires:	unzip
@@ -28,7 +29,8 @@ Simple LDAP Login provides all of the features, none of the hassles.
 
 %prep
 %setup -qn %{plugin}
-%undos -f php,txt,phtml
+%undos -f php
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
