@@ -8,7 +8,7 @@ Group:		Applications/WWW
 Source0:	http://downloads.wordpress.org/plugin/simple-ldap-login.%{version}.zip
 # Source0-md5:	c552fbfcd655936a0c6feccfa02643a6
 Patch0:		path-adldap.patch
-URL:		http://wordpress.org/extend/plugins/simple-ldap-login/
+URL:		http://clifgriffin.com/2009/05/13/simple-ldap-login-13-for-wordpress/
 BuildRequires:	rpmbuild(macros) >= 1.553
 BuildRequires:	unzip
 Requires:	php-adldap >= 3.3.2
