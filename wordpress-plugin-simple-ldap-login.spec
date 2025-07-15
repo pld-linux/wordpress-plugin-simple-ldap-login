@@ -30,7 +30,7 @@ Simple LDAP Login provides all of the features, none of the hassles.
 %prep
 %setup -qn %{plugin}
 %undos -f php
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
